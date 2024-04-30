@@ -1,0 +1,11 @@
+<p>MenuBurger</p>
+<div class="card flex justify-content-center">
+  <button
+    #btn
+    type="button"
+    pButton
+    label="Toggle"
+    (click)="menu.toggle($event)"
+  ></button>
+  <p-tieredMenu #menu [model]="items" [popup]="true"></p-tieredMenu>
+</div>
